@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Layout-component>
+    <products-component/>
+    <form-component/>
+  </Layout-component>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LayoutComponent from "@/components/layout/layout-component.vue";
+import productsComponent from "@/components/products/products-component.vue";
+import formComponent from "@/components/form/form-component.vue";
 
 export default {
-  name: 'App',
+  name: 'product-management',
   components: {
-    HelloWorld
+    LayoutComponent,
+    productsComponent,
+    formComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

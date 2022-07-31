@@ -1,0 +1,47 @@
+.form-container {
+  height: fit-content;
+  @apply w-1/2 m-5 p-5 text-gray-500 bg-white;
+  .right-section {
+    width: 150px;
+    min-height: 347px;
+    @apply flex flex-wrap ;
+    .file-container {
+      margin-top: 24px;
+      @apply flex items-start ;
+      div {
+        @apply  w-full border border-dotted px-3 py-8 text-center;
+        .file {
+          @apply flex flex-col w-full text-xs;
+        }
+      }
+
+    }
+
+    .button-container {
+      @apply flex items-end justify-center text-xs;
+      button {
+        @apply rounded;
+        &:first-child {
+          @apply mr-2;
+        }
+      }
+    }
+
+  }
+
+  .left-section {
+    width: calc(100% - 150px);
+    @apply pr-5;
+    .row {
+      @apply w-full flex flex-col;
+      label {
+        @apply text-xs font-bold py-1;
+      }
+
+      input, select, textarea {
+        @apply border;
+      }
+    }
+  }
+
+}

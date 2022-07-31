@@ -1,0 +1,19 @@
+.top-section {
+  height: 50px;
+  @apply w-full bg-white;
+}
+
+.content-container {
+  @apply flex flex-row-reverse justify-center items-start bg-gray-200;
+  .content{
+    width: calc(100% - 50px);
+  }
+  .left-nav {
+    width: 50px;
+    height: calc(100vh - 50px);
+    @apply bg-white flex flex-col text-xl items-center justify-start;
+    i{
+      @apply mt-5;
+    }
+  }
+}
