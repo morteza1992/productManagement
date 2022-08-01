@@ -1,0 +1,53 @@
+.product-container {
+  @apply w-1/2 pr-5 text-gray-500;
+
+  .table-row {
+    @apply bg-white mb-2 rounded-lg;
+    td {
+      @apply p-3;
+      &:first-child {
+        @apply rounded-l-lg;
+      }
+
+      &:last-child {
+        @apply rounded-r-lg;
+      }
+    }
+  }
+
+  #table {
+    @apply text-xs;
+    tbody {
+      display: block;
+      height: 420px;
+      overflow: auto;
+      @apply pr-2;
+    }
+
+    thead, tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    thead {
+      width: calc(100% - 1em)
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

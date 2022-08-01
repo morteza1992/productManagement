@@ -17,7 +17,7 @@
         <div class="row">
           <label>Category</label>
           <select>
-            <option></option>
+            <option v-for="(item, index) in categoriesList" :key="index">{{ item }}</option>
           </select>
         </div>
         <div class="row">
@@ -53,6 +53,13 @@
   </div>
 
 </template>
+<script>
+export default {
+  props: {
+    categoriesList: Array
+  }
+}
+</script>
 <style lang="scss" scoped>
 @import "style/form.scss";
 </style>
