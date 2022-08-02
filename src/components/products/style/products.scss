@@ -1,5 +1,5 @@
 .product-container {
-  @apply w-1/2 pr-5 text-gray-500;
+  @apply w-full lg:w-1/2 pr-5 pl-5 lg:pl-0 text-gray-500;
 
   .table-row {
     @apply bg-white mb-2 rounded-lg;
@@ -16,7 +16,7 @@
   }
 
   #table {
-    @apply text-xs;
+    @apply text-xs w-full;
     tbody {
       display: block;
       height: 420px;
@@ -27,11 +27,22 @@
     thead, tbody tr {
       display: table;
       width: 100%;
-      table-layout: fixed;
+      white-space: pre-wrap;
+
+      td {
+        width: 14.28%;
+      }
+
     }
 
     thead {
-      width: calc(100% - 1em)
+      width: 100%;
+
+      tr {
+        th {
+          width: 14.28%;
+        }
+      }
     }
   }
 

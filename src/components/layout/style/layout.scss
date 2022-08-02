@@ -1,19 +1,21 @@
 .top-section {
   height: 50px;
-  @apply w-full bg-white;
+  @apply fixed top-0 left-0 w-full bg-white;
 }
 
 .content-container {
   @apply flex flex-row-reverse justify-center items-start bg-gray-200;
-  .content{
-    width: calc(100% - 50px);
-    @apply flex justify-between items-start flex-row-reverse;
+  .content {
+    padding: 50px 0 0 50px;
+    @apply w-full flex justify-between flex-wrap lg:flex-nowrap items-start ;
   }
+
   .left-nav {
     width: 50px;
-    height: calc(100vh - 50px);
-    @apply bg-white flex flex-col text-xl items-center justify-start;
-    i{
+    height: 100%;
+    padding-top: 50px;
+    @apply fixed bg-white flex flex-col text-xl items-center justify-start left-0 top-0;
+    i {
       @apply mt-5;
     }
   }

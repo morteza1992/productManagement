@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading, .modal {
+  @apply flex items-center justify-center w-full h-full absolute top-0 left-0 text-3xl text-white;
+  background-color: #0000006e;
+  z-index: 999;
+}
+
+.modal-content {
+  @apply bg-white text-gray-700 p-8 rounded-2xl;
+  button {
+    @apply border rounded text-lg px-5 py-3 m-2;
+  }
+}

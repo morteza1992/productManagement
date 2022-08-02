@@ -1,6 +1,7 @@
 .form-container {
   height: fit-content;
-  @apply w-1/2 m-5 p-5 text-gray-500 bg-white;
+  width: calc(100% - 2.5rem);
+  @apply lg:w-1/2 m-5 p-5 text-gray-500 bg-white;
   .right-section {
     width: 150px;
     min-height: 347px;
@@ -9,7 +10,7 @@
       margin-top: 24px;
       @apply flex items-start ;
       div {
-        @apply  w-full border border-dotted px-3 py-8 text-center;
+        @apply w-full border border-dotted px-3 py-8 text-center;
         .file {
           @apply flex flex-col w-full text-xs;
         }
@@ -27,6 +28,10 @@
       }
     }
 
+  }
+
+  .border-red {
+    border: 1px solid red !important;
   }
 
   .left-section {
